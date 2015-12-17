@@ -1,0 +1,20 @@
+import macroAlias from 'ember-computed-decorators/macro-alias';
+import macaroni from 'ember-macaroni';
+
+export var findFromCollectionByKey = macroAlias(macaroni.findFromCollectionByKey);
+export var findFromCollectionByValue = macroAlias(macaroni.findFromCollectionByValue);
+export var rejectFromCollectionByKey = macroAlias(macaroni.rejectFromCollectionByKey);
+export var rejectFromCollectionByValue = macroAlias(macaroni.rejectFromCollectionByValue);
+export var filterFromCollectionByKey = macroAlias(macaroni.filterFromCollectionByKey);
+export var filterFromCollectionByContains = macroAlias(macaroni.filterFromCollectionByContains);
+export var collectionWithoutKey = macroAlias(macaroni.collectionWithoutKey);
+export var reduceCollectionByKey = macroAlias(macaroni.reduceCollectionByKey);
+export var isEqualByKeys = macroAlias(macaroni.isEqualByKeys);
+export var ifThenElseWithKeys = macroAlias(macaroni.ifThenElseWithKeys);
+export var ifThenElseWithValues = macroAlias(macaroni.ifThenElseWithValues);
+export var gte = macroAlias(macaroni.gte);
+export var gt = macroAlias(macaroni.gt);
+export var lte = macroAlias(macaroni.let);
+export var lt = macroAlias(macaroni.lt);
+export var getPropertiesByKeys = macroAlias(macaroni.getPropertiesByKeys);
+export var joinWith = macroAlias(macaroni.joinWith);

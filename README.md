@@ -1,25 +1,47 @@
-# Ember-macaroni-decorators
+# ember-macaroni-decorators
 
-This README outlines the details of collaborating on this Ember addon.
+#### Decorators for computed properties in [ember-macaroni](https://github.com/poteto/ember-macaroni). This project version should stay in sync with `ember-macaroni` so the interface is consistent and expected.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```shell
+# ember-cli > 0.2.3
+ember install ember-macaroni
+ember install ember-macaroni-decorators
+# ember-cli <= 0.2.3
+ember install:addon ember-macaroni
+ember install:addon ember-macaroni-decorators
+```
 
-## Running
+## Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+```javascript
+import Ember from 'ember';
+import { gt } from 'ember-macaroni-decorators';
 
-## Running Tests
+export default Ember.Object.create({
+  first: 5,
+  second: 2,
+  @gt('first', 'second') isFirstGreaterThanSecond, // true
+});
+```
 
-* `ember test`
-* `ember test --server`
+## Implemented Computed Methods
 
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+- `findFromCollectionByKey`
+- `findFromCollectionByValue`
+- `rejectFromCollectionByKey`
+- `rejectFromCollectionByValue`
+- `filterFromCollectionByKey`
+- `filterFromCollectionByContains`
+- `collectionWithoutKey`
+- `reduceCollectionByKey`
+- `isEqualByKeys`
+- `ifThenElseWithKeys`
+- `ifThenElseWithValues`
+- `gte`
+- `gt`
+- `lte`
+- `lt`
+- `getPropertiesByKeys`
+- `joinWith`

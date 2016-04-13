@@ -1,20 +1,25 @@
 import macroAlias from 'ember-computed-decorators/macro-alias';
 import macaroni from 'ember-macaroni';
-
-export var findFromCollectionByKey = macroAlias(macaroni.findFromCollectionByKey);
-export var findFromCollectionByValue = macroAlias(macaroni.findFromCollectionByValue);
-export var rejectFromCollectionByKey = macroAlias(macaroni.rejectFromCollectionByKey);
-export var rejectFromCollectionByValue = macroAlias(macaroni.rejectFromCollectionByValue);
-export var filterFromCollectionByKey = macroAlias(macaroni.filterFromCollectionByKey);
-export var filterFromCollectionByContains = macroAlias(macaroni.filterFromCollectionByContains);
-export var collectionWithoutKey = macroAlias(macaroni.collectionWithoutKey);
-export var reduceCollectionByKey = macroAlias(macaroni.reduceCollectionByKey);
-export var isEqualByKeys = macroAlias(macaroni.isEqualByKeys);
-export var ifThenElseWithKeys = macroAlias(macaroni.ifThenElseWithKeys);
-export var ifThenElseWithValues = macroAlias(macaroni.ifThenElseWithValues);
-export var gte = macroAlias(macaroni.gte);
-export var gt = macroAlias(macaroni.gt);
-export var lte = macroAlias(macaroni.let);
-export var lt = macroAlias(macaroni.lt);
+// collection
+export var filterContains = macroAlias(macaroni.filterContains);
+export var filterKey = macroAlias(macaroni.filterKey);
+export var findKey = macroAlias(macaroni.findKey);
+export var find = macroAlias(macaroni.find);
+export var reduceKey = macroAlias(macaroni.reduceKey);
+export var reduce = macroAlias(macaroni.reduce);
+export var rejectKey = macroAlias(macaroni.rejectKey);
+export var reject = macroAlias(macaroni.reject);
+export var withoutKey = macroAlias(macaroni.withoutKey);
+export var without = macroAlias(macaroni.without);
+// truth
+export var equalKey = macroAlias(macaroni.equalKey);
+export var ternaryKey = macroAlias(macaroni.ternaryKey);
+export var ternary = macroAlias(macaroni.ternary);
+export var gteKey = macroAlias(macaroni.gteKey);
+export var gtKey = macroAlias(macaroni.gtKey);
+export var lteKey = macroAlias(macaroni.lteKey);
+export var ltKey = macroAlias(macaroni.ltKey);
+// general
 export var getPropertiesByKeys = macroAlias(macaroni.getPropertiesByKeys);
+export var join = macroAlias(macaroni.join);
 export var joinWith = macroAlias(macaroni.joinWith);

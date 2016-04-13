@@ -1,6 +1,6 @@
 {
   "name": "ember-macaroni-decorators",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Ember computed decorators for `ember-macaroni`",
   "directories": {
     "doc": "doc",

@@ -11,7 +11,12 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "https://github.com/rjhilgefort/ember-macaroni-decorators",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjhilgefort/ember-macaroni-decorators.git"
+  },
+  "author": "Rob Hilgefort <rjhilgefort@gmail.com> (http://rob.hilgefort.me)",
+  "contributors": [],
   "engines": {
     "node": ">= 0.10.0"
   },

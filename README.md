@@ -1,5 +1,6 @@
 # ember-macaroni-decorators
 
+[![npm version](https://badge.fury.io/js/ember-macaroni-decorators.svg)](https://badge.fury.io/js/ember-macaroni-decorators) [![Build Status](https://travis-ci.org/rjhilgefort/ember-macaroni-decorators.svg?branch=master)](https://travis-ci.org/rjhilgefort/ember-macaroni-decorators) [![Ember Observer Score](https://emberobserver.com/badges/ember-macaroni-decorators.svg)](https://emberobserver.com/addons/ember-macaroni-decorators)
 #### Decorators for computed properties in [ember-macaroni](https://github.com/poteto/ember-macaroni). This project version should stay in sync with `ember-macaroni` so the interface is consistent and expected.
 
 ## Installation
@@ -28,20 +29,26 @@ export default Ember.Object.create({
 
 ## Implemented Computed Methods
 
-- `findFromCollectionByKey`
-- `findFromCollectionByValue`
-- `rejectFromCollectionByKey`
-- `rejectFromCollectionByValue`
-- `filterFromCollectionByKey`
-- `filterFromCollectionByContains`
-- `collectionWithoutKey`
-- `reduceCollectionByKey`
-- `isEqualByKeys`
-- `ifThenElseWithKeys`
-- `ifThenElseWithValues`
-- `gte`
-- `gt`
-- `lte`
-- `lt`
-- `getPropertiesByKeys`
-- `joinWith`
+- **Collection**
+  - `filterContains`
+  - `filterKey`
+  - `findKey`
+  - `find`
+  - `reduceKey`
+  - `reduce`
+  - `rejectKey`
+  - `reject`
+  - `withoutKey`
+  - `without`
+- **Truth**
+  - `equalKey`
+  - `ternaryKey`
+  - `ternary`
+  - `gteKey`
+  - `gtKey`
+  - `lteKey`
+  - `ltKey`
+- **General**
+  - `getPropertiesByKeys`
+  - `join`
+  - `joinWith`

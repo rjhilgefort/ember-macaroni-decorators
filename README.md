@@ -18,12 +18,12 @@ ember install:addon ember-macaroni-decorators
 
 ```javascript
 import Ember from 'ember';
-import { gt } from 'ember-macaroni-decorators';
+import { gtKey } from 'ember-macaroni-decorators';
 
 export default Ember.Object.create({
   first: 5,
   second: 2,
-  @gt('first', 'second') isFirstGreaterThanSecond, // true
+  @gtKey('first', 'second') isFirstGreaterThanSecond, // true
 });
 ```
 

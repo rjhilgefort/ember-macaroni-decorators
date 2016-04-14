@@ -1,6 +1,6 @@
 {
   "name": "ember-macaroni-decorators",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Ember computed decorators for `ember-macaroni`",
   "directories": {
     "doc": "doc",
@@ -35,7 +35,7 @@
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
-    "ember-macaroni": "rjhilgefort/ember-macaroni#develop",
+    "ember-macaroni": "rjhilgefort/ember-macaroni#v0.3.0",
     "ember-resolver": "^2.0.3",
     "ember-try": "0.2.2",
     "loader.js": "^4.0.1"
